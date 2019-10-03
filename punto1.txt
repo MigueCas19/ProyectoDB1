@@ -1,0 +1,6 @@
+Nuestra aplicación web consiste en un supermercado virtual,  cuyo proposito es facilitar
+la compra y venta de productos de la canasta familiar. Además de eso, pretender ofrecer
+trabajo a personas puedan transportar y entregar dichos productos. Un usiario podrá crear su cuenta,
+tener un reguistro de los productos que desee comprar, tener guardados sus medios de pago,
+ver la ubicación de sus pedidos no entregados en tiempo real. Y los conductores tendrán que registrar
+los datos del vehiculo, llevar un registro de los pedidos que debe entregar y datos financieros para la tramitación de los pagos.

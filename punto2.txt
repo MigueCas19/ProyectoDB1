@@ -1,0 +1,65 @@
+1. Creación de perfil:
+
+    Cuando el usuario acceda a la opción de Registrarse, le aparecerá un menú que le solicitará
+    datos como
+      Nombres
+      Apellidos
+      Documento de identidad
+      Fecha de nacimiento
+      Dirección de domicilio
+      Información de contacto (telefono o correo electronico)
+      Contraseña
+    En el momento en que el usuario mande estos datos se módificará nuestra bases de datos creando al nuevo usuario.
+    En caso de que no se llenen todos los campos, aparecerá una alerta que no permitirá que el usuario avance.
+
+2. Inicio de sesión:
+
+    Cuando un usuario acceda a la opción Iniciar Sesión, le aparecerá un menú que le solicitara 2 datos Correo/telefono y Contraseña
+    Posteriormente su buscaran los datos en la base de datos, habiendo 3 casos
+      El correo/telefono no está registrado en la base de datos
+      El correo/telefono está registrado en la base de datos, pero la contraseña asociada a esa cuenta no coincide
+      El correo/telefono y la contraseña ingresados esten en la base de datos.
+    En los dos primeros casos se le informará al usuario de lo ocurrido y se le volverá a solicitar la información requerida.
+    En el último caso, se redireccionara a la página de inicio usando dicha cuenta.
+
+3. Carrito
+
+    El usuario podrá explorar los productos de la tienda virtual, cuyo inventario esta almacenado en una base de datos.
+    En el momento en el que el usuario desee comprar algún producto, tendra al alcance un boton que permita guardar "en el carrito"
+    dichos productos. El inventario de los productos no se modificará hasta que el usuario finalice el pago, lo que se modificara es el carrito asociado a ese usuario.
+    Cuando vaya a realizar la compra accederá a su carrito, y pulsará un boton que dice "comprar", accedera al formulario para validar su metodo de pago y una vez el pago haya sido
+    aprobado, se modificará el inventario del producto y se le alertara a un transportador la nueva orden de entrega.
+
+4. Metodos de Pago
+
+    Un usuario en principio al momento de registrarse no realiza la inscripcion de metodos de pagos. En el momento que desee, en la barra de navegación habrá un boton que dirá "Metodos de pagos" y que al presionarlo
+    le dará al usuario 3 métodos de pago:
+      Tarjeta de débito
+      Tarjeta de crédito
+      PayPal
+    Si es crédito, se redireccionará al usuario a un formulario que pide los siguientes datos sobre su tarjeta:
+      No. de la Tarjeta
+      Expedición
+      CVC
+      Nombre titular
+
+    Si es dédito:
+      Tipo de persona
+      Entidad Bancaria
+
+    Con esta informacion se le redirecciona a la página del banco para que complete el pago.
+
+    Si es PayPal, se le pedirá la información de su cuenta.
+
+5. Registro de transportadores
+
+  En la página principal, habrá una sección que se llame "Únete". Al dirigirse a esta, las personas que quieran trabajar en este contexto, deberán darle a la aplicación
+  permiso para conocer su ubicacion en todo momento y además tendrán que registrar los siguientes datos:
+    Nombres
+    Apellidos
+    Cédula de ciudadanía
+    Licencia del vehículo
+    Placa del vehículo
+
+  En el momento en que el transportador mande estos datos se módificará nuestra bases de datos creando al nuevo transportador.
+  En caso de que no se llenen todos los campos, aparecerá una alerta que no permitirá que el transportador avance.
