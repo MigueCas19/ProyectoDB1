@@ -4,7 +4,7 @@
     datos como
       Nombres
       Apellidos
-      Documento de identidad
+      Identificación (cédula, documento de identidad o pasaporte)
       Fecha de nacimiento
       Dirección de domicilio
       Información de contacto (telefono o correo electronico)
