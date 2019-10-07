@@ -1,0 +1,4 @@
+id_user, contraseña -> nombre_user, apellido_user, fecha_nacimiento_user, direccion_user, telefono_user
+id_produc -> nombre_produc, fecha_venc, precio
+numero_pedido -> direccion_pedido
+id_conduc -> nombre_conduc, apellido_conduc, licencia, placa

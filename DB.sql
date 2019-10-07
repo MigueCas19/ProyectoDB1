@@ -1,5 +1,5 @@
 create table usuario(id_user integer NOT NULL, nombres varchar(50), apellidos varchar(50), fecha_de_nacimiento date, direccion varchar(30), telefono integer NOT NULL, contrasena varchar(10) NOT NULL, primary key(identif,contrasena));
-create table carrito(usuario varchar(20) NOT NULL, id_car integer NOT NULL, primary key(id_car));
+create table carrito(id_car integer NOT NULL, primary key(id_car));
 create table productos(id_prod integer NOT NULL, nombre varchar(30), fecha_ven date NOT NULL, precio integer NOT NULL, primary key(id_prod));
 create table pedido(numero integer NOT NULL, direccion varchar(30), primary key(numero));
 create table conductor(id_conduc integer NOT NULL, nombres varchar (50), apellidos varchar(50), licencia integer NOT NULL, placa integer NOT NULL, primary key(id_conduc));
@@ -7,9 +7,10 @@ create table medio_pago(tipo varchar(15) not null, numero integer not null, prim
 create table pertenece(
   ID_cart integer not null,
   ID_user integer not null,
-  primary key (ID_cart, ID_user),
+  pass_user varchar(10) not null,
+  primary key (ID_cart, ID_user, pass_user),
   foreign key (ID_cart) references carrito (id_car) on delete cascade on update cascade,
-  foreign key (ID_user) references usuario (id_user) on delete cascade on update cascade
+  foreign key (ID_user, pass_user) references usuario (id_user, contrasena) on delete cascade on update cascade
 );
 create table carro_contiene(
   ID_cart integer not null,
